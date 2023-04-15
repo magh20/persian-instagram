@@ -1,0 +1,118 @@
+header{
+    width: 100%;
+    box-shadow: 0px 2px 1px 0px rgb(200, 200, 200);
+    height: 40px;
+    border: none;
+}
+
+.wi-1190{
+    width: 1190px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.wi-20{
+    width: 20%;
+}
+
+.wi-30{
+    width: 30%;
+}
+
+.wi-50{
+    width: 50%;
+}
+
+.user-id{
+    background-color: rgb(0, 174, 255);
+    border-radius: 100%;
+    padding: 3px 5px;
+    color: white;
+}
+
+.icon{
+    font-size: 18px;
+    margin: 5px 15px;
+}
+
+.search{
+    width: 350px;
+    height: 30px;
+    margin: auto 0;
+    background-color: rgb(210, 206, 206);
+    border: none;
+    direction: rtl;
+    padding: 0 35px 0 0;
+    margin-left: 400px;
+    border-radius: 2px;
+}
+
+.search-icon{
+    color: rgb(162, 160, 160);
+    margin-left: -25px;
+}
+
+.img-head{
+    margin-left: 75px;
+}
+
+.stories{
+    width: 1190px;
+    height: 150px;
+    margin: 30px auto;
+    box-shadow: 0px 0px 1px 1px rgb(195, 192, 192) ;
+    border-radius: 5px;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+    align-items: center;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.stories figure img{
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    margin: 5px 10px 0 10px;
+}
+
+.stories figure{
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.stories figure figcaption{
+    text-align: center;
+}
+
+.my-story{
+    border-radius: 100%;
+    border: 3px solid rgb(225, 103, 133);
+    height: 100px;
+    width: 100px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.my-story i{
+    position: absolute;
+    left: 35px;
+    top: 35px;
+    color: rgb(225, 103, 133);
+}
+
+.story-circle{
+    border-radius: 100%;
+    border: 3px solid rgb(225, 103, 133);
+    height: 103px;
+    width: 103px;
+    position: absolute;
+    right: 6.5px;
+    top: 1px;
+}
