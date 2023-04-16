@@ -589,6 +589,10 @@ body{
     color: gray;
     font-size: 18px;
 }
+.right-sec2 .wallet-icons span:hover{
+    color: rgb(70, 69, 69);
+    cursor: pointer;
+}
 
 .right-sec3{
     width: 100%;
