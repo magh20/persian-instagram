@@ -6,6 +6,12 @@ body{
     align-items: center;
 }
 
+a{
+    text-decoration: none;
+    margin: 0;
+    color: black;
+}
+
 .header{
     width: 100%;
     box-shadow: 0px 2px 1px 0px rgb(200, 200, 200);
@@ -716,4 +722,182 @@ body{
     height: auto;
     font-size: 12px;
     margin: -5px 10px;
+}
+
+.main-sec1 , .main-sec2 , .main-sec3{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 5px;
+}
+.main-sec1 header , .main-sec2 header , .main-sec3 header{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+    background-color: rgba(247, 208, 154, 0.116);
+    border-radius: 5px 0px;
+}
+.main-sec1 header span , .main-sec2 header span , .main-sec3 header span{
+    color: gray;
+    margin: 0 15px;
+}
+.main-sec1 header a , .main-sec2 header a , .main-sec3 header a{
+    margin-right: -7px;
+    z-index: 1;
+}
+.main-sec1 header a img , .main-sec2 header a img , .main-sec3 header a img{
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+}
+.main-sec1 header p , .main-sec2 header p , .main-sec3 header p{
+    color: gray;
+    margin: 0 5px;
+    font-size: 15px;
+}
+.main-sec1 .post1-top{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+}
+.main-sec1 .post1-top a{
+    height: 40px;
+    width: 40px;
+    position: relative;
+    border-radius: 100%;
+    margin: 0 20px 0 30px;
+}
+.main-sec1 .post1-top a img{
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+}
+.main-sec1 .post1-top .gray-circle{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(205, 203, 203);
+    border-radius: 100%;
+    z-index: 2;
+    bottom: 0;
+    right: 0px;
+}
+.main-sec1 .post1-top .post-name{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: end;
+}
+.main-sec1 .post1-top .post-name p{
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    padding: 0;
+    cursor: pointer;
+}
+.main-sec1 .post1-top .post-time{
+    direction: rtl;
+}
+.main-sec1 .post1-top .post-time a{
+    margin:  0 0 0 10px;
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    font-size: 13px;
+}
+.main-sec1 .post1-top span{
+    color: gray;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main-sec1 .post1-top span:hover{
+    color: rgb(85, 85, 85);
+    cursor: pointer;
+}
+.main-sec1 .post1-middle{
+    width: 100%;
+    height: auto;
+}
+.main-sec1 .post1-middle img{
+    width: 100%;
+    height: 450px;
+}
+.main-sec1 .post1-middle p{
+    direction: rtl;
+    font-size: 18px;
+    color: rgb(107, 106, 106);
+    padding: 0 10px 5px 0;
+}
+.main-sec1 .post1-bottom{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-sec1 .post1-bottom .post-btm-icon{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: center;
+}
+.main-sec1 .post1-bottom span{
+    font-size: 15px;
+    color: gray;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.main-sec1 .post1-bottom span i{
+    margin: 0 10px 0 5px;
+}
+.main-sec1 .post1-bottom span i:hover{
+    color: rgb(96, 95, 95);
+}
+.main-sec1 .post1-bottom .like-color:hover{
+    color: red !important;
+}
+.main-sec1 .post1-bottom .user-like{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.main-sec1 .post1-bottom .user-like a{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    margin: 0 0 7px 1px;
+}
+.main-sec1 .post1-bottom .user-like a img{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    
+}
+.main-sec1 .post1-bottom .user-like .other-like{
+    margin-bottom: 5px;
+    border: 1px solid gray;
+    font-size: 13px;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main-sec1 .post1-bottom:hover .user-like .other-like{
+    background-color: rgb(180, 179, 179);
+    color: white;
 }
