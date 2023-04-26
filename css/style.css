@@ -23,6 +23,7 @@ a{
     position: sticky;
     top: 0;
     background-color: white;
+    z-index: 5;
 }
 
 .wi-1190{
@@ -733,6 +734,7 @@ a{
     align-items: end;
     border: 1px solid rgb(217, 217, 217);
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 .main-sec1 header , .main-sec2 header , .main-sec3 header{
     width: 100%;
@@ -762,7 +764,7 @@ a{
     margin: 0 5px;
     font-size: 15px;
 }
-.main-sec1 .post1-top{
+.post-top{
     width: 100%;
     height: 60px;
     display: flex;
@@ -770,19 +772,19 @@ a{
     justify-content: end;
     align-items: center;
 }
-.main-sec1 .post1-top a{
+.post-top a{
     height: 40px;
     width: 40px;
     position: relative;
     border-radius: 100%;
     margin: 0 20px 0 30px;
 }
-.main-sec1 .post1-top a img{
+.post-top a img{
     border-radius: 100%;
     height: 40px;
     width: 40px;
 }
-.main-sec1 .post1-top .gray-circle{
+.post-top .gray-circle{
     position: absolute;
     width: 10px;
     height: 10px;
@@ -792,7 +794,7 @@ a{
     bottom: 0;
     right: 0px;
 }
-.main-sec1 .post1-top .post-name{
+.post-top .post-name{
     width: 80%;
     height: 60px;
     display: flex;
@@ -800,7 +802,7 @@ a{
     justify-content: start;
     align-items: end;
 }
-.main-sec1 .post1-top .post-name p{
+.post-top .post-name p{
     color: blue;
     font-size: 18px;
     font-weight: bold;
@@ -808,39 +810,39 @@ a{
     padding: 0;
     cursor: pointer;
 }
-.main-sec1 .post1-top .post-time{
+.post-top .post-time{
     direction: rtl;
 }
-.main-sec1 .post1-top .post-time a{
+.post-top .post-time a{
     margin:  0 0 0 10px;
     text-decoration: none;
     color: rgb(107, 107, 107);
     font-size: 13px;
 }
-.main-sec1 .post1-top span{
+.post-top span{
     color: gray;
     font-size: 18px;
     font-weight: bold;
 }
-.main-sec1 .post1-top span:hover{
+.post-top span:hover{
     color: rgb(85, 85, 85);
     cursor: pointer;
 }
-.main-sec1 .post1-middle{
+.main-sec1 .post-middle , .main-sec2 .post-middle , .main-sec3 .post3-middle{
     width: 100%;
     height: auto;
 }
-.main-sec1 .post1-middle img{
+.main-sec1 .post-middle img , .main-sec2 .post-middle img{
     width: 100%;
     height: 450px;
 }
-.main-sec1 .post1-middle p{
+.main-sec1 .post-middle p, .main-sec3 .post3-middle p{
     direction: rtl;
     font-size: 18px;
     color: rgb(107, 106, 106);
     padding: 0 10px 5px 0;
 }
-.main-sec1 .post1-bottom{
+.post-bottom{
     width: 100%;
     height: 30px;
     display: flex;
@@ -848,46 +850,46 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-.main-sec1 .post1-bottom .post-btm-icon{
+.post-bottom .post-btm-icon{
     display: flex;
     flex-direction: row-reverse;
     justify-content: end;
     align-items: center;
 }
-.main-sec1 .post1-bottom span{
+.post-bottom span{
     font-size: 15px;
     color: gray;
     margin-left: 5px;
     margin-bottom: 5px;
 }
-.main-sec1 .post1-bottom span i{
+.post-bottom span i{
     margin: 0 10px 0 5px;
 }
-.main-sec1 .post1-bottom span i:hover{
+.post-bottom span i:hover{
     color: rgb(96, 95, 95);
 }
-.main-sec1 .post1-bottom .like-color:hover{
+.post-bottom .like-color:hover{
     color: red !important;
 }
-.main-sec1 .post1-bottom .user-like{
+.post-bottom .user-like{
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
 }
-.main-sec1 .post1-bottom .user-like a{
+.post-bottom .user-like a{
     border-radius: 100%;
     width: 25px;
     height: 25px;
     margin: 0 0 7px 1px;
 }
-.main-sec1 .post1-bottom .user-like a img{
+.post-bottom .user-like a img{
     border-radius: 100%;
     width: 25px;
     height: 25px;
     
 }
-.main-sec1 .post1-bottom .user-like .other-like{
+.post-bottom .user-like .other-like{
     margin-bottom: 5px;
     border: 1px solid gray;
     font-size: 13px;
@@ -897,7 +899,55 @@ a{
     justify-content: center;
     align-items: center;
 }
-.main-sec1 .post1-bottom:hover .user-like .other-like{
+.post-bottom:hover .user-like .other-like{
     background-color: rgb(180, 179, 179);
     color: white;
+}
+.main-sec1 footer , .main-sec2 footer , .main-sec3 footer{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    align-items: stretch;
+    border-top: 1px solid rgb(217, 217, 217);
+    width: 100%;
+    height: 50px;
+}
+.main-sec1 footer form , .main-sec2 footer form , .main-sec3 footer form{
+    width: 80%;
+    height: 45px;
+    margin-right: 7px;
+}
+.main-sec1 footer input , .main-sec2 footer input , .main-sec3 footer input{
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+    border: none;
+    font-size: 16px;
+    color: rgb(139, 138, 138);
+    
+}
+.main-sec1 footer input:focus , .main-sec2 footer input:focus , .main-sec3 footer input:focus{
+    outline: none;
+}
+.main-sec1 footer span , .main-sec2 footer span , .main-sec3 footer span{
+    width: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    color: gray;
+    font-size: 18px;
+    cursor: pointer;
+}
+.main-sec1 footer span i:hover , .main-sec2 footer span i:hover , .main-sec3 footer span i:hover{
+    color: rgb(99, 98, 98);
+}
+.main-sec1 footer button , .main-sec2 footer button , .main-sec3 footer button{
+    width: 15%;
+    font-size: 17px;
+    color: rgb(64, 64, 214);
+    background-color: inherit;
+    border: none;
+    text-align: center;
+    cursor: pointer;
 }
